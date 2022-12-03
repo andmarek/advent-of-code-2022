@@ -54,7 +54,11 @@ class PartTwo(DayThree):
                 if common_elemnt:
                     self.priority += self.calc_priority(common_elemnt)
             
-part_one = PartOne()
+with open("data", "r") as f:
+    data_str = f.read()
+    data_arr = rucksacks_str.split("\n")
+
+part_one = PartOne(data_arr)
 part_one.solve()
 print(f"Part One answer: {part_one.priority}")
 
