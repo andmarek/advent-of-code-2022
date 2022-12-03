@@ -3,13 +3,7 @@ import string
 
 class DayThree:
     def calc_priority(self, letter):
-        lowercase = "abcdefghijklmnopqrstuvwxyz"
-        uppercase = lowercase.upper()
-
-        if letter in string.ascii_lowercase:
-            return lowercase.index(letter) + 1
-        else:
-            return uppercase.index(letter) + 26 + 1
+        return string.ascii_letters.index(letter) + 1
 
 class PartOne(DayThree):
     def __init__(self) -> None:
