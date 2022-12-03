@@ -1,9 +1,9 @@
-class DayThree:
+class DayFour:
 
     def foo():
         return None
 
-class PartOne(DayThree):
+class PartOne(DayFour):
     def __init__(self, data) -> None:
         super().__init__()
         self.data = data
@@ -15,6 +15,7 @@ with open("data", "r") as f:
     data = f.read()
 
     part_one = PartOne(data)
-    part_one.solve()
+    solution = part_one.solve()
+    
 
-print(f"Part One answer: {part_one.priority}")
+print("Part One answer: " + solution)
