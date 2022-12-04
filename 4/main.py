@@ -1,9 +1,4 @@
-class DayFour:
-
-    def foo():
-        return None
-
-class PartOne(DayFour):
+class PartOne:
     def __init__(self, data) -> None:
         super().__init__()
         self.data = data
@@ -40,7 +35,7 @@ class PartOne(DayFour):
             return True
         else: return False
 
-class PartTwo(DayFour):
+class PartTwo:
     def __init__(self, data) -> None:
         super().__init__()
         self.data = data
@@ -92,3 +87,6 @@ with open("data", "r") as f:
     
 print("Part One answer: " + str(part_one.count))
 print("Part Two answer: " + str(part_two.count))
+
+
+
