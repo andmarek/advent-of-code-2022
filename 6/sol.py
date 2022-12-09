@@ -1,7 +1,7 @@
 PACKET = 4
 MESSAGE = 14
 
-def find_start_of(distinct_characters: int):
+def find_start_of(distinct_characters: int) -> int:
     with open("data", "r") as f:
         data = f.read()
         for i in range(len(data)-distinct_characters-1): 
